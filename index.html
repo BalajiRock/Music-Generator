@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Feedback Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="env.js"></script>
+	<script type="module" src="index.js"></script>
+</head>
+<body>
+    <div class="feedback-form">
+        <h2>Music Feedback Form</h2>
+            <div class="input-group">
+                <label for="describe_feeling_input">Describe Feeling:</label>
+                <input type="text" id="describe_feeling_input" required>
+            </div>
+            <div class="input-group">
+                <label for="Mood_input">Mood:</label>
+                <select id="Mood_input">
+                    <option value="Happy">Happy - Cheerful and upbeat</option>
+                    <option value="Sad">Sad - Melancholic and reflective</option>
+                    <option value="Relaxed">Relaxed - Calm and soothing</option>
+                    <option value="Hopeful">Hopeful - Optimistic and positive</option>
+                    <option value="Motivational">Motivational - Inspiring and encouraging</option>
+                    <option value="Epic">Epic - Grand and majestic</option>
+                    <option value="Mysterious">Mysterious - Enigmatic and intriguing</option>
+                    <option value="Romantic">Romantic - Conveys love and passion</option>
+                    <option value="Triumphant">Triumphant - Inspires a sense of victory</option>
+                    <option value="Tense">Tense - Creates suspense and anticipation</option>
+                    <option value="Serene">Serene - Calm and tranquil</option>
+                    <option value="Whimsical">Whimsical - Playful and light-hearted</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="Atmosphere_input">Atmosphere:</label>
+                <select id="Atmosphere_input">
+                    <option value="Energetic">Energetic</option>
+                    <option value="Calm">Calm</option>
+                    <option value="Inspirational">Inspirational</option>
+                    <option value="Serious">Serious</option>
+                    <option value="Upbeat">Upbeat</option>
+                    <option value="Elegant">Elegant</option>
+                    <option value="Dramatic">Dramatic</option>
+                    <option value="Festive">Festive</option>
+                    <option value="Nostalgic">Nostalgic</option>
+                    <option value="Futuristic">Futuristic</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="Tempo_input">Tempo:</label>
+                <select id="Tempo_input">
+                    <option value="Lento">Slowly</option>
+                    <option value="Grave">Very slow and solemn</option>
+                    <option value="A tempo">Return to the previous tempo after a deviation</option>
+                    <option value="Rallentando">Gradually slowing down</option>
+                    <option value="Accelerando">Gradually speeding up</option>
+                    <option value="Rubato">Flexible tempo, with slight variations</option>
+                </select>
+            </div>
+            <button id="submit_button" type="submit">Submit</button>
+       
+    </div>
+    <div class="feedback-output">
+        <h2>Feedback Output</h2>
+        <div class="output-group">
+            <h3>Image:</h3>
+            <div id="img_output">Image output will appear here</div>
+        </div>
+        <div class="output-group">
+            <h3>Note:</h3>
+            <div id="note_output">Note output will appear here</div>
+        </div>
+        <div class="output-group">
+            <h3>Title:</h3>
+            <div id="title_output">Title output will appear here</div>
+        </div>
+        <div class="output-group">
+            <h3>Description:</h3>
+            <div id="discription_output">Description output will appear here</div>
+        </div>
+    </div>
+    <div class="feedback-output">
+        <iframe src="https://trinket.io/embed/music/afd8375ed4" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    </div>
+
+</body>
+</html>
